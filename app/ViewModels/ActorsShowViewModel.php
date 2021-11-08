@@ -54,7 +54,7 @@ class ActorsShowViewModel extends ViewModel
 
             return collect($movie)->merge([
                 'poster_path' => $movie['poster_path'] ?
-                'https://image.tmdb.org/t/p/w185'.$movie['poster_path']
+                'https://image.tmdb.org/t/p/original'.$movie['poster_path']
                 : 'https://via.placeholder.com/185x278',
                 'title' => $title,
                 'linkToPage' => $movie['media_type'] === 'movie' ? route('movies.show', $movie['id']) : route('tv.show', $movie['id'])

@@ -51,7 +51,7 @@
             <div>
                 <a href="{{route('actors.show',$cast['id'])}}">
                     @if ($cast['profile_path'])
-                    <img class="text-center mt-3" src="{{'https://image.tmdb.org/t/p/w200/'.$cast['profile_path']}}"
+                    <img class="text-center mt-3" src="{{'https://image.tmdb.org/t/p/original/'.$cast['profile_path']}}"
                         alt="img" width="100%">
                     @else
                     <img class="text-center mt-3" src="https://via.placeholder.com/204X306/000/FFF/?text=ImageNotFound"
